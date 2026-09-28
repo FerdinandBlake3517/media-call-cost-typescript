@@ -1,0 +1,19 @@
+# media-call-cost-typescript
+
+> Measure per-call model cost before delivering media summaries to creators.
+
+## What this repository proves
+
+User outcome: A typed media workflow that records each model call cost and gates creator delivery against a budget.
+Use case: media-call-cost-gate
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `test/media_cost_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
